@@ -10,7 +10,7 @@ $(document).ready(function(){
 	       toSearch();
 	    } 
 	});
-	$("#startButton").addEventListener('touchstart', function(event) {
-    	toSearch();
-	}, false);    
+	$("#startButton").bind("touchstart",function(e){
+		toSearch();
+	});
 });
